@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    /* font family */
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*Style the navbar*/
+
+#nav {
+    background-color: white;
+    z-index: +999;
+}
+
+ul {
+    position: fixed;
+    margin: 0;
+    padding: 0% 5%;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    transition: 0.4s;
+    list-style-type: none;
+    font-size: 1.6vw;
+    margin: 0;
+}
+
+li {}
+
+li img {
+    width: 20%;
+}
+
+li a {
+    display: block;
+}
+
+
+/* Style the header */
+
+.header {
+    background-image: url('../img/head2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10% 25%;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 6vw;
+}
+
+.titulo {
+    backdrop-filter: blur(6px);
+    border: 6px solid #1d80c4;
+}
+
+.header h1,
+.header h2 {
+    color: #1d80c4;
+}
+
+
+/*Styles one-column*/
+
+.one-column {
+    float: right;
+    width: 100%;
+    padding: 5%;
+}
+
+.one-column img {
+    width: 25%;
+}
+
+
+/*Styles two-column*/
+
+.two-column {
+    float: left;
+    width: 50%;
+    padding: 2%;
+}
+
+.two-column p {
+    font-size: 2vw;
+    color: white;
+    font-weight: bold;
+}
+
+
+/*Styles three-column*/
+
+.three-column {
+    /*background-color: #1d80c4;*/
+    float: left;
+    width: 33%;
+    padding: 2%;
+    text-align: left;
+}
+
+.three-column h3 {
+    font-size: 1.5vw;
+    color: white;
+    font-weight: bold;
+}
+
+.three-column p {
+    font-size: 1vw;
+    color: white;
+    font-weight: bold;
+}
+
+.three-column img {
+    width: 10%;
+    padding-left: 3%;
+}
+
+
+/*----------Styles six-column-------------*/
+
+
+/*No se usa*/
+
+.six-column {
+    background-color: #1d80c4;
+    float: left;
+    width: 16.5%;
+    padding: 0%;
+    padding-top: 3%;
+}
+
+.six-column p {
+    font-size: 1vw;
+    color: white;
+    font-weight: bold;
+}
+
+.six-column img {
+    width: 30%;
+    padding-left: 3%;
+    padding-top: 1%;
+}
+
+
+/*-----------*/
+
+
+/*--------------Style clases apoyo---------------------*/
+
+.cuenta-atras {
+    background-color: #1d80c4;
+    float: left;
+    width: 100%;
+    padding: 0%;
+    text-align: left;
+    /*padding-right: 15%;
+    padding-left: 15%;*/
+    border-radius: 20px;
+    /*border: 8px solid rgb(255, 0, 0);*/
+}
+
+.recuadro {
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgb(95, 154, 243);
+    /*background: linear-gradient(150deg, rgb(95, 154, 243), rgb(81, 123, 221), rgb(95, 154, 243));*/
+    text-align: center;
+    transition: 0.3s;
+    opacity: 0.9;
+    border-radius: 100px;
+}
+
+.recuadro:hover {
+    /*background: linear-gradient(150deg, rgb(81, 123, 221), rgb(95, 154, 243), rgb(81, 123, 221));*/
+    background-color: rgb(81, 123, 221);
+    border: 3px solid white;
+    color: black;
+    opacity: 1;
+}
+
+.recuadro span {
+    position: absolute;
+    display: block;
+}
+
+
+/*--No se usa--*/
+
+.sinPaddingR {
+    /*padding-right: 0%;*/
+    padding-bottom: 10%;
+    float: right;
+}
+
+
+/*--*/
+
+.sinPaddingU {
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+.alinearCA {
+    padding-top: 4%;
+    padding-bottom: 3.3%;
+}
+
+
+/*Style IDs*/
+
+#section-1 {
+    /*background-color: rgb(61, 108, 238);*/
+    float: left;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: left;
+}
