@@ -18,10 +18,10 @@ body {
 }
 
 
-/*Style the navbar*/
+/*++++++++++++++++Style the navbar++++++++++++++++*/
 
 #nav {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.7);
     z-index: +999;
 }
 
@@ -49,7 +49,7 @@ li a {
 }
 
 
-/* Style the header */
+/*++++++++++++++Style the header+++++++++++++++++*/
 
 .header {
     background-image: url('../img/head2.jpg');
@@ -68,13 +68,14 @@ li a {
     border: 6px solid #1d80c4;
 }
 
-.header h1,
-.header h2 {
+.titulo h1,
+.titulo h2 {
     color: #1d80c4;
+    /*color: rgb(40, 128, 211);*/
 }
 
 
-/*Styles one-column*/
+/*++++++++++++++++Styles one-column+++++++++++++++*/
 
 .one-column {
     float: right;
@@ -87,7 +88,7 @@ li a {
 }
 
 
-/*Styles two-column*/
+/*+++++++++++++++Styles two-column+++++++++++++++++*/
 
 .two-column {
     float: left;
@@ -102,7 +103,7 @@ li a {
 }
 
 
-/*Styles three-column*/
+/*++++++++++++Styles three-column++++++++++++*/
 
 .three-column {
     /*background-color: #1d80c4;*/
@@ -159,7 +160,7 @@ li a {
 /*-----------*/
 
 
-/*--------------Style clases apoyo---------------------*/
+/*++++++++++++++Style clases apoyo++++++++++++++++*/
 
 .cuenta-atras {
     background-color: #1d80c4;
@@ -173,28 +174,39 @@ li a {
     /*border: 8px solid rgb(255, 0, 0);*/
 }
 
+
+/*---Botón descargar------*/
+
 .recuadro {
-    border: 3px solid rgb(255, 255, 255);
-    background-color: rgb(95, 154, 243);
-    /*background: linear-gradient(150deg, rgb(95, 154, 243), rgb(81, 123, 221), rgb(95, 154, 243));*/
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    /*background-color: rgb(95, 154, 243);*/
+    background: linear-gradient(150deg, rgb(95, 154, 243), rgb(81, 123, 221), rgb(95, 154, 243));
     text-align: center;
     transition: 0.3s;
-    opacity: 0.9;
-    border-radius: 100px;
+    border-radius: 70px;
+}
+
+.recuadro p {
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .recuadro:hover {
-    /*background: linear-gradient(150deg, rgb(81, 123, 221), rgb(95, 154, 243), rgb(81, 123, 221));*/
-    background-color: rgb(81, 123, 221);
-    border: 3px solid white;
-    color: black;
-    opacity: 1;
+    background: linear-gradient(150deg, rgb(81, 123, 221), rgb(95, 154, 243), rgb(81, 123, 221));
+    /*background-color: rgb(81, 123, 221);*/
+    border: 4px solid rgba(255, 255, 255, 1);
 }
 
-.recuadro span {
-    position: absolute;
-    display: block;
+.recuadro:hover .texto {
+    color: rgba(255, 255, 255, 1);
 }
+
+.recuadro2 {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+
+/*---------------------*/
 
 
 /*--No se usa--*/
@@ -214,15 +226,14 @@ li a {
 }
 
 .alinearCA {
-    padding-top: 4%;
+    padding-top: 3.5%;
     padding-bottom: 3.3%;
 }
 
 
-/*Style IDs*/
+/*++++++++++Style IDs++++++++++++*/
 
 #section-1 {
-    /*background-color: rgb(61, 108, 238);*/
     float: left;
     width: 100%;
     padding-left: 15%;
