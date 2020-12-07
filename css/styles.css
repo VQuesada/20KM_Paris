@@ -378,9 +378,12 @@ html {
 }
 
 
-/*+++++++++++++++RESPONSIVE+++++++++++++*/
+/*++++++++++++++++++++++++++++++++++RESPONSIVE+++++++++++++++++++++++++++++++++++++*/
 
 @media screen and (max-width:1100px) {
+    .header {
+        padding-top: 20%;
+    }
     /*--------navbar-----------*/
     body.disabledScroll {
         overflow: hidden;
@@ -390,6 +393,9 @@ html {
     }
     .icon.hide {
         display: none;
+    }
+    .navbar .logo img {
+        width: 75%;
     }
     .navbar .menu-list {
         position: fixed;
@@ -403,6 +409,7 @@ html {
         padding: 40px 0;
         text-align: center;
         transition: all 0.3s ease;
+        margin-top: 0;
     }
     .navbar .menu-list.active {
         left: 0%;
@@ -415,49 +422,15 @@ html {
         font-size: 30px;
     }
     /*--------------------*/
-}
-
-@media screen and (max-width:1000px) {
-    .one-column img {
-        width: 75%;
-    }
-}
-
-@media screen and (max-width:800px) {
-    /*---Header---*/
-    .header {
-        padding-left: 10%;
-        padding-right: 10%;
-        background-position-x: right;
-    }
-    .titulo:hover {
-        backdrop-filter: blur(0px);
-    }
-    .header h1 {
-        font-size: 12vw;
-    }
-    .header h2 {
-        font-size: 4vw;
-    }
-    /*---------*/
     /*---Cuenta atras---*/
-    .three-column {
-        width: 100%;
-        text-align: center;
-    }
     .three-column h3 {
-        font-size: 2.5vw;
-    }
-    .three-column p {
         font-size: 2vw;
     }
-    #section-1 {
-        padding-left: 20%;
-        padding-right: 20%;
+    .three-column p {
+        font-size: 1.7vw;
     }
-    .recuadro-fuera {
-        padding-left: 15%;
-        padding-right: 15%;
+    .two-columnB p {
+        font-size: 1.7vw;
     }
     .recuadro {
         border: 0.42vw solid rgba(255, 255, 255, 0.5);
@@ -465,56 +438,194 @@ html {
     .recuadro:hover {
         border: 0.42vw solid rgba(255, 255, 255, 1);
     }
+    .recuadro-fuera {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .two-columnB img {
+        padding-top: 12%;
+    }
+}
+
+
+/*--------*/
+
+
+/*------FOOTER--------*/
+
+.six-column {
+    width: 33%;
+}
+
+.footer h1 {
+    font-size: 2.7vw;
+}
+
+.footer p {
+    font-size: 1.5vw;
+}
+
+
+/*--------------------*/
+
+
+/*---Ruta--*/
+
+.one-column img {
+    width: 75%;
+}
+
+.one-column h1 {
+    font-size: 5vw;
+}
+
+.one-column p {
+    font-size: 3vw;
+}
+
+.two-column {
+    width: 100%;
+}
+
+.two-column p {
+    font-size: 3vw;
+}
+
+
+/*----------*/
+
+
+}
+@media screen and (max-width:1000px) {
+    .one-column img {
+        width: 75%;
+    }
+}
+@media screen and (max-width:800px) {
+    /*----navbar---*/
+    
+    .navbar .logo img {
+        width: 75%;
+    }
+    /*---Header---*/
+    
+    .header {
+        padding-left: 10%;
+        padding-right: 10%;
+        background-position-x: right;
+    }
+    
+    .titulo:hover {
+        backdrop-filter: blur(0px);
+    }
+    
+    .header h1 {
+        font-size: 12vw;
+    }
+    
+    .header h2 {
+        font-size: 4vw;
+    }
+    /*---------*/
+    /*---Cuenta atras---*/
+    
+    .three-column {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .three-column h3 {
+        font-size: 2.5vw;
+    }
+    
+    .three-column p {
+        font-size: 2vw;
+    }
+    
+    .two-columnB p {
+        font-size: 2.3vw;
+    }
+    
+    #section-1 {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    
+    .recuadro-fuera {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    
+    .recuadro {
+        border: 0.42vw solid rgba(255, 255, 255, 0.5);
+    }
+    
+    .recuadro:hover {
+        border: 0.42vw solid rgba(255, 255, 255, 1);
+    }
+    
     .recuadro img {
         width: 20%;
         padding-top: 5%;
     }
+    
     .alinearCA {
         padding-top: 0%;
         padding-bottom: 0%;
     }
+    
     .alinear-boton {
         padding-top: 5%;
         padding-bottom: 0%;
     }
     /*--------*/
     /*---Ruta--*/
+    
     .one-column img {
         width: 100%;
     }
+    
     .one-column h1 {
         font-size: 5vw;
     }
+    
     .one-column p {
         font-size: 3vw;
     }
+    
     .two-column {
         width: 100%;
     }
+    
     .two-column p {
         font-size: 3vw;
     }
     /*----------*/
     /*---FOOTER---*/
+    
     .two-columnFooter {
         width: 100%;
     }
+    
     .two-columnFooter img {
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
+    
     .six-column {
         width: 100%;
         padding: 2%;
         padding-top: 0;
         text-align: center;
     }
+    
     .footer h1 {
         font-size: 3vw;
     }
+    
     .footer p {
-        font-size: 1.6vw;
+        font-size: 2vw;
     }
     /*.padding1 {
         padding-bottom: 2%;

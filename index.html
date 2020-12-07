@@ -40,11 +40,11 @@
                 <div class="icon cancel-btn">
                     <i class="fas fa-times"></i>
                 </div>
-                <li><a href="#ruta">La ruta</a></li>
-                <li><a href="#desnivel">El desnivel</a></li>
-                <li><a href="#">Otro</a></li>
-                <li><a href="#">Orto</a></li>
-                <li><a href="#">Otto</a></li>
+                <li class="seleccion1"><a href="#ruta">La ruta</a></li>
+                <li class="seleccion2"><a href="#desnivel">El desnivel</a></li>
+                <li class="seleccion3"><a href="#">Otro</a></li>
+                <li class="seleccion4"><a href="#">Orto</a></li>
+                <li class="seleccion5"><a href="#">Otto</a></li>
             </ul>
             <div class="icon menu-btn">
                 <i class="fas fa-bars"></i>
@@ -168,6 +168,11 @@
         const body = document.querySelector("body");
         const navbar = document.querySelector(".navbar");
         const menu = document.querySelector(".menu-list");
+        const seccion1 = document.querySelector(".seleccion1");
+        const seccion2 = document.querySelector(".seleccion2");
+        const seccion3 = document.querySelector(".seleccion3");
+        const seccion4 = document.querySelector(".seleccion4");
+        const seccion5 = document.querySelector(".seleccion5");
         const menuBtn = document.querySelector(".menu-btn");
         const cancelBtn = document.querySelector(".cancel-btn");
         menuBtn.onclick = () => {
@@ -176,6 +181,31 @@
             body.classList.add("disabledScroll")
         }
         cancelBtn.onclick = () => {
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            body.classList.remove("disabledScroll")
+        }
+        seccion1.onclick = () => {
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            body.classList.remove("disabledScroll")
+        }
+        seccion2.onclick = () => {
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            body.classList.remove("disabledScroll")
+        }
+        seccion3.onclick = () => {
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            body.classList.remove("disabledScroll")
+        }
+        seccion4.onclick = () => {
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            body.classList.remove("disabledScroll")
+        }
+        seccion5.onclick = () => {
             menu.classList.remove("active");
             menuBtn.classList.remove("hide");
             body.classList.remove("disabledScroll")
