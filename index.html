@@ -10,24 +10,51 @@
     <link rel="icon" href="img/logo.png">
     <!--JAVASCRIPT-->
     <script src="js/codigo.js"></script>
+    <!--<script src="js/navbar.js"></script>-->
 
     <!--ESTILOS-->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/icon_drop.css">
+
+    <!--Fonts awesome-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
     <!--
-Los estilos externos son definidos con la etiqueta <link>,
-dentro de la sección <head> de la página HTML:
--->
+    Los estilos externos son definidos con la etiqueta
+    <link>, dentro de la sección <head> de la página HTML: 
+    -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <!--Cambiamos la fuente del texto-->
 </head>
 
+
 <body>
-    <ul id="nav">
-        <li>
-            <img src="img/logo.png" alt="logo20km">
-        </li>
-    </ul>
+
+    <!--NavBAR-->
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo">
+                <a href="#"><img src="img/logo.png" alt=""></a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="#ruta">La ruta</a></li>
+                <li><a href="#desnivel">El desnivel</a></li>
+                <li><a href="#">Otro</a></li>
+                <li><a href="#">Orto</a></li>
+                <li><a href="#">Otto</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="about"></div>
+
+    <!--HEADER-->
     <div class="header">
         <div class="titulo">
             <h1>Maratón</h1>
@@ -35,6 +62,7 @@ dentro de la sección <head> de la página HTML:
             <h2>Síguelo en español</h2>
         </div>
     </div>
+    <!--CUENTA ATRÁS-->
     <div class="row" id="section-1">
         <div class="cuenta-atras">
             <div class="three-column alinearCA">
@@ -43,20 +71,120 @@ dentro de la sección <head> de la página HTML:
             <div class="three-column alinearCA">
                 <h3 id="demo"></h3>
             </div>
-            <!--Poner three-column2 en responsive-->
+
             <div class="three-column">
-                <div class="recuadro2">
+                <div class="recuadro-fuera">
                     <a href="img/20KM_Paris.pdf" download class="hvr-icon-drop recuadro">
-                        <p class="texto">Descarga el flyer</p>
-                        <img src="img/20KM_Paris.png" alt="flyer" class="hvr-icon">
+                        <div class="two-columnB alinear-boton">
+                            <p class="texto">Descarga el flyer </p>
+                        </div>
+                        <div class="two-columnB">
+                            <img src="img/20KM_Paris.png" alt="flyer" class="hvr-icon">
+                        </div>
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
+    <!--RUTA-->
+    <div class="row" id="ruta">
+        <div class="one-column">
+            <h1>La ruta</h1>
+            <img src="img/recorrido.png" alt="">
+            <p>La carrera destaca los sitios más bonitos de la París occidental (la Torree Eifeel, el Trocadero, el Arco de triunfo, Bois de Boulogne, el Roland Garros, la Maison de la Radio, el Grand Palais, las Tuileries, el Pont Royal, Berges Rive Gauche...)
+                mientras se mantiene un alto nivel de seguridad.</p>
 
+            <div class="two-column">
+                <p>Las bandas juegan un papel extremadamente importante en la carrera, ya que crean una atmosfera tremenda tanto para los corredores cómo para los espectadores. Proporcionan energía y ayuda para levantar los espíritus de los corredores.</p>
+                <p>La organización de la zona de salida y las 23 olas de partida lanzadas cada 3 minutos asegurarán una fluidez excelente sin atascos de tráfico en los primeros kilómetros y sin congestión en la área final.</p>
+            </div>
+            <div class="two-column">
+                <img id="widthAdapt" src="img/le_parcours.jpg" alt="">
+            </div>
+            <div class="one-column">
+                <p>Las paradas de bebida y comida estarán situadas en los kilómetros 6, 10 y 15 y en la zona de llegada.</p>
+            </div>
+        </div>
     </div>
+
+    <!--FOOTER-->
+    <div class="footer">
+        <div class="row">
+            <div class="two-columnFooter">
+                <img src="img/logo-footer.png" alt="" class="imgLogo">
+            </div>
+            <div class="two-columnFooter logo_rs">
+                <img src="img/logo_fb.jpg" alt="" class="">
+                <img src="img/logo_tw.jpg" alt="" class="">
+                <img src="img/logo_ig.jpg" alt="" class="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="six-column">
+                <h1>El evento</h1>
+                <p>El trayecto de la carrera</p>
+                <p>la historia</p>
+                <p>Galería de fotos</p>
+                <p>Estadísticas</p>
+                <p>Sigue la carrera online</p>
+            </div>
+            <div class="six-column padding1">
+                <h1>Participa</h1>
+                <p>Participar</p>
+                <p>20 kids de paris</p>
+                <p>Compañías</p>
+                <p>Exhibidor</p>
+            </div>
+            <div class="six-column padding2">
+                <h1>Información práctica</h1>
+                <p>La ciudad</p>
+                <p>Instrucciones finales</p>
+                <p>FAQ</p>
+            </div>
+            <div class="six-column padding3">
+                <h1>Ve preparándote</h1>
+                <p>Preparación</p>
+            </div>
+            <div class="six-column">
+                <h1>Asociados</h1>
+                <p>JOMA</p>
+                <p>Unéo</p>
+                <p>Teddy</p>
+                <p>Athlé</p>
+                <p>Trek</p>
+                <p>Mairie de Paris</p>
+            </div>
+            <div class="six-column padding1">
+                <h1>Contacto</h1>
+                <p>Voluntariado</p>
+                <p>Prensa</p>
+                <p>Maratón</p>
+                <p>Regulación</p>
+            </div>
+        </div>
     </div>
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menu = document.querySelector(".menu-list");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = () => {
+            menu.classList.add("active");
+            menuBtn.classList.add("hide");
+            body.classList.add("disabledScroll")
+        }
+        cancelBtn.onclick = () => {
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            body.classList.remove("disabledScroll")
+        }
+
+        window.onscroll = () => {
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
+
 
 </body>
