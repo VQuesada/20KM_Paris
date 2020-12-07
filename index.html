@@ -37,8 +37,8 @@
                 <a href="#"><img src="img/logo.png" alt=""></a>
             </div>
             <ul class="menu-list">
-                <div class="icon cancel-btn">
-                    <i class="fas fa-times"></i>
+                <div class="icon cancel-btn hvr-icon-spin">
+                    <i class="fas fa-times hvr-icon"></i>
                 </div>
                 <li class="seleccion1"><a href="#ruta">La ruta</a></li>
                 <li class="seleccion2"><a href="#desnivel">El desnivel</a></li>
@@ -46,7 +46,7 @@
                 <li class="seleccion4"><a href="#">Orto</a></li>
                 <li class="seleccion5"><a href="#">Otto</a></li>
             </ul>
-            <div class="icon menu-btn">
+            <div class="icon menu-btn hvr-pop">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
@@ -99,7 +99,7 @@
                 <p>La organización de la zona de salida y las 23 olas de partida lanzadas cada 3 minutos asegurarán una fluidez excelente sin atascos de tráfico en los primeros kilómetros y sin congestión en la área final.</p>
             </div>
             <div class="two-column">
-                <img id="widthAdapt" src="img/le_parcours.jpg" alt="">
+                <img src="img/le_parcours.jpg" alt="">
             </div>
             <div class="one-column">
                 <p>Las paradas de bebida y comida estarán situadas en los kilómetros 6, 10 y 15 y en la zona de llegada.</p>
@@ -209,10 +209,6 @@
             menu.classList.remove("active");
             menuBtn.classList.remove("hide");
             body.classList.remove("disabledScroll")
-        }
-
-        window.onscroll = () => {
-            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
         }
     </script>
 

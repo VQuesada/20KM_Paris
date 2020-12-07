@@ -22,7 +22,7 @@ body {
 
 .content {
     max-width: 1250px;
-    margin: auto;
+    /*margin: auto;*/
     padding: 0 30px;
 }
 
@@ -31,12 +31,16 @@ body {
     z-index: 5;
     width: 100%;
     padding: 25px 0;
+}
+
+.navbar.cerrar {
     transition: all 0.3s ease;
 }
 
 .navbar.sticky {
     padding: 10px 0;
     background: rgba(255, 255, 255, 0.8);
+    transition: all 1s ease;
 }
 
 .navbar .content {
@@ -60,14 +64,15 @@ body {
 .menu-list li a {
     color: #1d80c4;
     font-size: 25px;
-    font-weight: 500;
-    margin-left: 25px;
+    font-weight: 700;
+    margin-left: 45px;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .menu-list li a:hover {
-    font-weight: 700;
+    /*font-weight: 1000;*/
+    color: rgb(0, 217, 255);
 }
 
 .icon {
@@ -195,7 +200,7 @@ html {
     float: left;
     width: 33%;
     padding: 1%;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .three-column h3 {
@@ -246,8 +251,8 @@ html {
     background: linear-gradient(150deg, rgb(95, 154, 243), rgb(81, 123, 221), rgb(95, 154, 243));
     text-align: center;
     transition: 0.3s;
-    border-radius: 70px;
     overflow: auto;
+    border-radius: 50px;
 }
 
 .recuadro p {
@@ -264,6 +269,7 @@ html {
     background: linear-gradient(150deg, rgb(81, 123, 221), rgb(95, 154, 243), rgb(81, 123, 221));
     /*background-color: rgb(81, 123, 221);*/
     border: 0.21vw solid rgba(255, 255, 255, 1);
+    border-radius: 70px;
 }
 
 .recuadro:hover .texto {
@@ -340,21 +346,9 @@ html {
     float: left;
     width: 100%;
     padding: 0%;
-    /*text-align: center;*/
+    text-align: center;
     border-radius: 1vw;
 }
-
-
-/*--No se usa--*/
-
-.sinPaddingR {
-    /*padding-right: 0%;*/
-    padding-bottom: 10%;
-    float: right;
-}
-
-
-/*--*/
 
 .sinPaddingU {
     padding-top: 0%;
@@ -392,6 +386,9 @@ html {
     .header h2 {
         font-size: 4vw;
     }
+    .titulo {
+        border: 0.7vw solid #1d80c4;
+    }
     /*--------navbar-----------*/
     body.disabledScroll {
         overflow: hidden;
@@ -402,8 +399,14 @@ html {
     .menu-btn {
         font-size: 40px;
     }
+    .menu-btn:hover {
+        color: lightskyblue;
+    }
     .cancel-btn {
         font-size: 30px;
+    }
+    .cancel-btn:hover {
+        color: lightcoral;
     }
     .icon.hide {
         display: none;
@@ -434,6 +437,9 @@ html {
     .navbar .menu-list li a {
         color: white;
         font-size: 30px;
+    }
+    .navbar .menu-list li a:hover {
+        color: rgb(171, 237, 253);
     }
     /*--------------------*/
     /*---Cuenta atras---*/
@@ -548,10 +554,7 @@ html {
         padding-right: 15%;
     }
     .recuadro {
-        border: 0.42vw solid rgba(255, 255, 255, 0.5);
-    }
-    .recuadro:hover {
-        border: 0.42vw solid rgba(255, 255, 255, 1);
+        border-radius: 30px;
     }
     .recuadro img {
         width: 20%;
@@ -643,6 +646,9 @@ html {
     }
     .footer p {
         font-size: 2.5vw;
+    }
+    .recuadro {
+        border-radius: 25px;
     }
 }
 

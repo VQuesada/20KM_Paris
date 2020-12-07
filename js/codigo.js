@@ -24,10 +24,18 @@ var x = setInterval(function() {
     // If the count down is finished, write some text
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
+        document.getElementById("demo").innerHTML = "0d 0h 0m 0s";
     }
 }, 1000);
 
 
+//Dar color a la navbar al hacer scroll hacia abajo
+window.onscroll = function() {
+    scrollFunction()
+};
 
-    
+
+window.onscroll = () => {
+    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    this.scrollY < 20 ? navbar.classList.remove("cerrar") : navbar.classList.add("cerrar");
+}
