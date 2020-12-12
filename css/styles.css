@@ -21,7 +21,7 @@ body {
 /*++++++++++++++++Style the navbar++++++++++++++++*/
 
 .content {
-    max-width: 1250px;
+    max-width: 100%;
     /*margin: auto;*/
     padding: 0 30px;
 }
@@ -31,6 +31,7 @@ body {
     z-index: 5;
     width: 100%;
     padding: 25px 0;
+    transition: all 0.3s ease;
 }
 
 .navbar.cerrar {
@@ -57,15 +58,29 @@ body {
     display: inline-flex;
 }
 
+
+/*Para que el texto del navbar pueda ser mnas largo y mantenerse en la misma línea*/
+
+.navbar .content .menu-list {
+    width: 100%;
+    /*Hacer que baje en el responsive*/
+    margin-left: 20%;
+}
+
+
+/*--*/
+
 .menu-list li {
     list-style: none;
+    display: inline-flex;
+    align-items: flex-end;
 }
 
 .menu-list li a {
     color: #1d80c4;
     font-size: 25px;
     font-weight: 700;
-    margin-left: 45px;
+    margin-left: 35px;
     text-decoration: none;
     transition: all 0.3s ease;
 }
@@ -146,12 +161,13 @@ html {
     color: black;
 }
 
-.one-column img {
+
+/*.one-column img {
     width: 60%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
+}*/
 
 
 /*+++++++++++++++Styles two-column+++++++++++++++++*/
@@ -169,24 +185,6 @@ html {
 
 .two-column img {
     width: 100%;
-}
-
-
-/*+++++++++++*/
-
-
-/*+++++++++++++++Styles two-columnFooter+++++++++++++++++*/
-
-.two-columnFooter {
-    float: left;
-    width: 50%;
-    padding: 2%;
-}
-
-.two-columnFooter p {
-    font-size: 2vw;
-    color: white;
-    font-weight: bold;
 }
 
 
@@ -218,9 +216,6 @@ html {
 
 /*----------Styles six-column-------------*/
 
-
-/*No se usa*/
-
 .six-column {
     float: left;
     width: 16.5%;
@@ -232,9 +227,6 @@ html {
     padding-left: 3%;
     padding-top: 1%;
 }
-
-
-/*-----------*/
 
 
 /*++++++++++++++Botón descargar+++++++++++++*/
@@ -290,7 +282,107 @@ html {
 /*+++++++++++++++++++++++*/
 
 
-/*+++++++++++++++Style Footer*+++++++++++++++++++*/
+/*+++++++++++++RUTA++++++++++++*/
+
+.maparuta {
+    width: 100%;
+    display: inline-flex;
+}
+
+.maparuta p {
+    width: 45%;
+}
+
+.maparuta h1 {
+    width: 5%;
+}
+
+iframe {
+    width: 50%;
+    height: 30vw;
+    border: 0;
+    margin: 0;
+    scroll-behavior: unset;
+}
+
+
+/*frameborder="0" marginheight="0" marginwidth="0"*/
+
+
+/*++++++++++++++++*/
+
+
+/*++++++++++++++++TABLA++++++++++++++++++*/
+
+#corredoresins {
+    background-image: url('../img/inscripciones3.jpg');
+    background-attachment: fixed;
+    background-size: contain;
+    background-size: 120%;
+    backdrop-filter: blur(4px);
+}
+
+.blurry {
+    backdrop-filter: blur(4px);
+}
+
+#corredores {
+    /*border-collapse: collapse;*/
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#corredores td,
+#corredores th {
+    padding: 1%;
+}
+
+#corredores tr {
+    border: 1px solid black;
+}
+
+#corredores tr:nth-child(even) {
+    background-color: #99cef1;
+}
+
+#corredores tr:nth-child(odd) {
+    background-color: #7ec5f5;
+}
+
+#corredores th {
+    background-color: #1d80c4;
+    color: white;
+    font-size: 1.5vw;
+}
+
+#corredores td {
+    color: rgb(255, 255, 255);
+    font-size: 1.3vw;
+    font-weight: 200px;
+}
+
+#corredores tr:hover {
+    background-color: #1d80c4
+}
+
+
+/*++++++++++++++++++++++++*/
+
+
+/*+++++++++++++++Style Footer+++++++++++++++++++*/
+
+.two-columnFooter {
+    float: left;
+    width: 50%;
+    padding: 2%;
+}
+
+.two-columnFooter p {
+    font-size: 2vw;
+    color: white;
+    font-weight: bold;
+}
 
 @keyframes BgGradient {
     0% {
@@ -329,13 +421,23 @@ html {
 }
 
 .logo_rs {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*display: block;*/
 }
 
 .logo_rs img {
+    padding-top: 15%;
     width: 5%;
+}
+
+.footer .six-column {
+    text-align: center;
+}
+
+.clear {
+    display: none;
+    clear: both;
 }
 
 
@@ -360,6 +462,23 @@ html {
     padding-bottom: 1.3%;
 }
 
+.masFoto:hover {
+    width: 200%;
+    position: relative;
+    top: -25px;
+    left: -35px;
+    height: auto;
+    display: block;
+}
+
+.tnormal {
+    display: block;
+}
+
+.tresponsive {
+    display: none;
+}
+
 
 /*++++++++++Style IDs++++++++++++*/
 
@@ -371,24 +490,51 @@ html {
     text-align: left;
 }
 
+#desnivel {
+    background: #1d80c4;
+}
+
+#desnivel h1,
+#desnivel p {
+    color: white;
+}
+
 
 /*++++++++++++++++++++++++++++++++++RESPONSIVE+++++++++++++++++++++++++++++++++++++*/
 
-@media screen and (max-width:1100px) {
-    .header {
-        padding-top: 20%;
-        padding-right: 12%;
-        padding-left: 12%;
+@media screen and (max-width: 1900px) {}
+
+@media screen and (max-width:1800px) {
+    .recuadro {
+        border-radius: 40px;
     }
-    .header h1 {
-        font-size: 10vw;
+}
+
+@media screen and (max-width: 1660px) {
+    .navbar .content .menu-list {
+        margin-left: 13%;
     }
-    .header h2 {
-        font-size: 4vw;
+}
+
+@media screen and (max-width: 1570px) {
+    .navbar .content .menu-list {
+        margin-left: 11%;
     }
-    .titulo {
-        border: 0.7vw solid #1d80c4;
+}
+
+@media screen and (max-width: 1480px) {
+    .navbar .content .menu-list {
+        margin-left: 6%;
     }
+}
+
+@media screen and (max-width:1450px) {
+    .recuadro {
+        border-radius: 30px;
+    }
+}
+
+@media screen and (max-width: 1420px) {
     /*--------navbar-----------*/
     body.disabledScroll {
         overflow: hidden;
@@ -414,6 +560,10 @@ html {
     .navbar .logo img {
         width: 75%;
     }
+    .navbar .content .menu-list {
+        margin-left: 0;
+        width: auto;
+    }
     .navbar .menu-list {
         position: fixed;
         top: 0;
@@ -433,6 +583,8 @@ html {
     }
     .navbar .menu-list li {
         margin-top: 45px;
+        /*Para que se vea uno bajo otro*/
+        width: 100%;
     }
     .navbar .menu-list li a {
         color: white;
@@ -442,6 +594,29 @@ html {
         color: rgb(171, 237, 253);
     }
     /*--------------------*/
+}
+
+@media screen and (max-width:1150px) {
+    .recuadro {
+        border-radius: 25px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .header {
+        padding-top: 20%;
+        padding-right: 12%;
+        padding-left: 12%;
+    }
+    .header h1 {
+        font-size: 10vw;
+    }
+    .header h2 {
+        font-size: 4vw;
+    }
+    .titulo {
+        border: 0.7vw solid #1d80c4;
+    }
     /*---Cuenta atras---*/
     #section-1 {
         padding-left: 5%;
@@ -469,22 +644,14 @@ html {
     .recuadro-fuera {
         padding-top: 4%;
     }
+    .recuadro {
+        border-radius: 50px;
+    }
     /*--------*/
-    /*------FOOTER--------*/
-    .six-column {
-        width: 33%;
-    }
-    .footer h1 {
-        font-size: 3.3vw;
-    }
-    .footer p {
-        font-size: 2.3vw;
-    }
-    /*--------------------*/
     /*---Ruta--*/
-    .one-column img {
+    /*.one-column img {
         width: 75%;
-    }
+    }*/
     .one-column h1 {
         font-size: 5vw;
     }
@@ -498,11 +665,93 @@ html {
         font-size: 3vw;
     }
     /*----------*/
+    /*---El desnivel---*/
+    .masFoto:hover {
+        width: 110%;
+    }
+    .tnormal {
+        display: none;
+    }
+    .tresponsive {
+        display: block;
+    }
+    /*---------------*/
+    /*------TABLA-----*/
+    #corredores th {
+        font-size: 1.8vw;
+    }
+    #corredores td {
+        font-size: 1.6vw;
+    }
+    /*-----------*/
+    /*-----RUTA------*/
+    .maparuta {
+        display: block;
+    }
+    .maparuta iframe {
+        width: 100%;
+        height: 45vw;
+    }
+    .maparuta h1 {
+        display: none;
+    }
+    .maparuta p {
+        width: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    /*-------------*/
+    /*------FOOTER--------*/
+    .six-column {
+        width: 33%;
+    }
+    .footer h1 {
+        font-size: 3.3vw;
+    }
+    .footer p {
+        font-size: 2.3vw;
+    }
+    .clear {
+        display: block;
+    }
+    .two-columnFooter {
+        width: 100%;
+    }
+    .footer {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .two-columnFooter img {
+        width: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .logo_rs img {
+        width: 5%;
+        padding-top: 0%;
+    }
+    /*--------------------*/
 }
 
 @media screen and (max-width:1000px) {
-    .one-column img {
+    /*.one-column img {
         width: 75%;
+    }*/
+}
+
+@media screen and (max-width:900px) {
+    .header {
+        background-position-x: right;
+    }
+    #corredores th {
+        font-size: 2.1vw;
+    }
+    #corredores td {
+        font-size: 1.9vw;
+    }
+    .recuadro {
+        border-radius: 40px;
     }
 }
 
@@ -515,7 +764,6 @@ html {
     .header {
         padding-left: 10%;
         padding-right: 10%;
-        background-position-x: right;
     }
     .titulo:hover {
         backdrop-filter: blur(0px);
@@ -570,9 +818,9 @@ html {
     }
     /*--------*/
     /*---Ruta--*/
-    .one-column img {
+    /*.one-column img {
         width: 100%;
-    }
+    }*/
     .one-column h1 {
         font-size: 5vw;
     }
@@ -586,6 +834,17 @@ html {
         font-size: 3vw;
     }
     /*----------*/
+    /*---El desnivel---*/
+    .masFoto:hover {
+        width: 100%;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        height: auto;
+        display: block;
+        z-index: 1;
+    }
+    /*-----------------*/
     /*---FOOTER---*/
     .two-columnFooter {
         width: 100%;
@@ -618,10 +877,13 @@ html {
         font-size: 30px;
     }
     .navbar .menu-list {
-        max-width: 270px;
+        max-width: 40%;
     }
     .navbar .menu-list li a {
-        font-size: 30px;
+        font-size: 3vw;
+    }
+    .maparuta iframe {
+        height: 50vw;
     }
 }
 
@@ -633,7 +895,7 @@ html {
         font-size: 20px;
     }
     .navbar .menu-list {
-        max-width: 250px;
+        max-width: 45%;
     }
     .header {
         padding-top: 20%;
@@ -652,18 +914,28 @@ html {
     }
 }
 
+@media screen and (max-width:550px) {
+    .maparuta iframe {
+        height: 60vw;
+    }
+    .recuadro {
+        border-radius: 25px;
+    }
+}
+
 @media screen and (max-width:500px) {
     .navbar .menu-list li a {
-        font-size: 20px;
+        font-size: 4vw;
     }
     .navbar .menu-list {
-        max-width: 200px;
+        max-width: 50%;
     }
 }
 
 @media screen and (max-width:450px) {
     .header {
         padding-top: 25%;
+        background-position-x: 70%;
     }
     .one-column h1 {
         font-size: 6vw;
@@ -688,6 +960,29 @@ html {
         padding-left: 10%;
         padding-right: 10%;
     }
+    .navbar .menu-list {
+        max-width: 55%;
+    }
+}
+
+@media screen and (max-width:415px) {
+    .header {
+        background-position-y: bottom;
+        background-position-x: 80%;
+    }
+}
+
+@media screen and(max-width:400px) {
+    #corredores {
+        width: 100%;
+        margin: 0%;
+    }
+    #corredores th {
+        font-size: 2.2vw;
+    }
+    #corredores td {
+        font-size: 2vw;
+    }
 }
 
 @media screen and (max-width:350px) {
@@ -696,5 +991,14 @@ html {
     }
     .cancel-btn {
         font-size: 15px;
+    }
+}
+
+@media screen and(max-width:300px) {
+    #corredores th {
+        font-size: 3vw;
+    }
+    #corredores td {
+        font-size: 2.8vw;
     }
 }
