@@ -664,6 +664,21 @@ iframe {
     .two-column p {
         font-size: 3vw;
     }
+    .maparuta {
+        display: block;
+    }
+    .maparuta iframe {
+        width: 100%;
+        height: 45vw;
+    }
+    .maparuta h1 {
+        display: none;
+    }
+    .maparuta p {
+        width: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
     /*----------*/
     /*---El desnivel---*/
     .masFoto:hover {
@@ -683,24 +698,10 @@ iframe {
     #corredores td {
         font-size: 1.6vw;
     }
+    #corredoresins {
+        background-size: 130%;
+    }
     /*-----------*/
-    /*-----RUTA------*/
-    .maparuta {
-        display: block;
-    }
-    .maparuta iframe {
-        width: 100%;
-        height: 45vw;
-    }
-    .maparuta h1 {
-        display: none;
-    }
-    .maparuta p {
-        width: 100%;
-        padding-left: 2%;
-        padding-right: 2%;
-    }
-    /*-------------*/
     /*------FOOTER--------*/
     .six-column {
         width: 33%;
@@ -738,6 +739,19 @@ iframe {
     /*.one-column img {
         width: 75%;
     }*/
+    /*----TABLA----*/
+    #corredoresins {
+        background-size: 135%;
+    }
+    /*------------*/
+}
+
+@media screen and (max-width:950px) {
+    /*----TABLA----*/
+    #corredoresins {
+        background-size: 145%;
+    }
+    /*------------*/
 }
 
 @media screen and (max-width:900px) {
@@ -753,6 +767,19 @@ iframe {
     .recuadro {
         border-radius: 40px;
     }
+    /*----TABLA----*/
+    #corredoresins {
+        background-size: 155%;
+    }
+    /*------------*/
+}
+
+@media screen and (max-width:850px) {
+    /*----TABLA----*/
+    #corredoresins {
+        background-size: 170%;
+    }
+    /*------------*/
 }
 
 @media screen and (max-width:800px) {
@@ -845,6 +872,11 @@ iframe {
         z-index: 1;
     }
     /*-----------------*/
+    /*----TABLA----*/
+    #corredoresins {
+        background-size: 180%;
+    }
+    /*------------*/
     /*---FOOTER---*/
     .two-columnFooter {
         width: 100%;
@@ -869,6 +901,15 @@ iframe {
     /*----------------*/
 }
 
+@media screen and (max-width:750px) {
+    /*----TABLA----*/
+    #corredoresins {
+        background-size: 190%;
+        background-position-x: 40%;
+    }
+    /*------------*/
+}
+
 @media screen and (max-width:700px) {
     .menu-btn {
         font-size: 40px;
@@ -885,6 +926,29 @@ iframe {
     .maparuta iframe {
         height: 50vw;
     }
+    /*----TABLA----*/
+    #corredoresins {
+        background-size: 215%;
+        background-position-x: 40%;
+    }
+    /*------------*/
+}
+
+@media screen and (max-width:650px) {
+    #corredores {
+        width: 100%;
+    }
+    #corredores th {
+        font-size: 2.8vw;
+    }
+    #corredores td {
+        font-size: 2.6vw;
+    }
+    /*----TABLA----*/
+    #corredoresins {
+        background-size: 225%;
+    }
+    /*------------*/
 }
 
 @media screen and (max-width:600px) {
@@ -912,6 +976,11 @@ iframe {
     .recuadro {
         border-radius: 25px;
     }
+    /*----TABLA----*/
+    #corredoresins {
+        background-size: 240%;
+    }
+    /*------------*/
 }
 
 @media screen and (max-width:550px) {
@@ -921,6 +990,11 @@ iframe {
     .recuadro {
         border-radius: 25px;
     }
+    /*----TABLA----*/
+    #corredoresins {
+        background-size: 260%;
+    }
+    /*------------*/
 }
 
 @media screen and (max-width:500px) {
@@ -930,6 +1004,11 @@ iframe {
     .navbar .menu-list {
         max-width: 50%;
     }
+    /*----TABLA----*/
+    #corredoresins {
+        background-size: 285%;
+    }
+    /*------------*/
 }
 
 @media screen and (max-width:450px) {
@@ -963,6 +1042,17 @@ iframe {
     .navbar .menu-list {
         max-width: 55%;
     }
+    #corredores th {
+        font-size: 3vw;
+    }
+    #corredores td {
+        font-size: 2.8vw;
+    }
+    /*----TABLA----*/
+    #corredoresins {
+        background-size: 315%;
+    }
+    /*------------*/
 }
 
 @media screen and (max-width:415px) {
@@ -972,17 +1062,12 @@ iframe {
     }
 }
 
-@media screen and(max-width:400px) {
-    #corredores {
-        width: 100%;
-        margin: 0%;
+@media screen and (max-width:400px) {
+    /*----TABLA----*/
+    #corredoresins {
+        background-size: 355%;
     }
-    #corredores th {
-        font-size: 2.2vw;
-    }
-    #corredores td {
-        font-size: 2vw;
-    }
+    /*------------*/
 }
 
 @media screen and (max-width:350px) {
@@ -992,6 +1077,12 @@ iframe {
     .cancel-btn {
         font-size: 15px;
     }
+    /*----TABLA----*/
+    #corredoresins {
+        background-size: 370%;
+        background-position-x: 40%;
+    }
+    /*------------*/
 }
 
 @media screen and(max-width:300px) {
