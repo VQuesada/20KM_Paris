@@ -23,12 +23,6 @@ body {
     src: url('../fonts/SweetPuppy.ttf');
 }
 
-@font-face {
-    font-family: "Weathertop";
-    src: url('../fonts/weathertop.ttf');
-    font-weight: lighter;
-}
-
 
 /* Clear floats after the columns */
 
@@ -289,7 +283,6 @@ html {
 
 .recuadro p {
     color: rgba(255, 255, 255, 0.8);
-    /*font-family: "Weathertop";*/
     font-family: "Sweet";
 }
 
