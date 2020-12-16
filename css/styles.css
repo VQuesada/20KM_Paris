@@ -1,4 +1,4 @@
-* {
+    * {
     box-sizing: border-box;
     /* font family */
     font-family: 'Quicksand', sans-serif;
@@ -665,6 +665,18 @@ iframe {
         color: rgb(171, 237, 253);
     }
     /*--------------------*/
+    @media screen and (max-height:450px) {
+        .navbar .content .menu-list {
+            max-width: 100%;
+            width: 90%;
+        }
+        .navbar .menu-list li {
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            display: inline-flex;
+        }
+    }
 }
 
 @media screen and (max-width:1150px) {
@@ -1032,205 +1044,207 @@ iframe {
         font-size: 2vw;
     }
     /*----------------*/
-}
-
-@media screen and (max-width:750px) {
-    /*----TABLA----*/
-    #corredoresins {
-        background-size: 190%;
-        background-position-x: 40%;
+    @media screen and (max-height:450px) {
+        .navbar .content .menu-list {
+            max-width: 100%;
+            width: 100%;
+        }
     }
-    /*------------*/
-}
-
-@media screen and (max-width:700px) {
-    .menu-btn {
-        font-size: 40px;
+    @media screen and (max-width:750px) {
+        /*----TABLA----*/
+        #corredoresins {
+            background-size: 190%;
+            background-position-x: 40%;
+        }
+        /*------------*/
     }
-    .cancel-btn {
-        font-size: 30px;
+    @media screen and (max-width:700px) {
+        .menu-btn {
+            font-size: 40px;
+        }
+        .cancel-btn {
+            font-size: 30px;
+        }
+        .navbar .menu-list {
+            max-width: 40%;
+        }
+        .navbar .menu-list li a {
+            font-size: 3vw;
+        }
+        .maparuta iframe {
+            height: 50vw;
+        }
+        /*----TABLA----*/
+        #corredoresins {
+            background-size: 215%;
+            background-position-x: 40%;
+        }
+        /*------------*/
     }
-    .navbar .menu-list {
-        max-width: 40%;
+    @media screen and (max-width:650px) {
+        #corredores {
+            width: 100%;
+        }
+        #corredores th {
+            font-size: 2.8vw;
+        }
+        #corredores td {
+            font-size: 2.6vw;
+        }
+        /*----TABLA----*/
+        #corredoresins {
+            background-size: 225%;
+        }
+        /*------------*/
     }
-    .navbar .menu-list li a {
-        font-size: 3vw;
+    @media screen and (max-width:600px) {
+        .menu-btn {
+            font-size: 30px;
+        }
+        .cancel-btn {
+            font-size: 20px;
+        }
+        .navbar .menu-list {
+            max-width: 45%;
+        }
+        .header {
+            padding-top: 20%;
+        }
+        .navbar .logo img {
+            width: 50%;
+        }
+        .footer h1 {
+            font-size: 4vw;
+        }
+        .footer p {
+            font-size: 2.5vw;
+        }
+        .recuadro {
+            border-radius: 25px;
+        }
+        /*----TABLA----*/
+        #corredoresins {
+            background-size: 240%;
+        }
+        /*------------*/
     }
-    .maparuta iframe {
-        height: 50vw;
+    @media screen and (max-width:550px) {
+        .maparuta iframe {
+            height: 60vw;
+        }
+        .recuadro {
+            border-radius: 25px;
+        }
+        /*----TABLA----*/
+        #corredoresins {
+            background-size: 260%;
+        }
+        /*------------*/
     }
-    /*----TABLA----*/
-    #corredoresins {
-        background-size: 215%;
-        background-position-x: 40%;
+    @media screen and (max-width:500px) {
+        .navbar .menu-list li a {
+            font-size: 4vw;
+        }
+        .navbar .menu-list {
+            max-width: 50%;
+        }
+        /*----TABLA----*/
+        #corredoresins {
+            background-size: 285%;
+        }
+        /*------------*/
+        @media screen and (max-height:450px) {
+            .navbar .menu-list li a {
+                font-size: 3.5vw;
+            }
+        }
     }
-    /*------------*/
-}
-
-@media screen and (max-width:650px) {
-    #corredores {
-        width: 100%;
+    @media screen and (max-width:450px) {
+        .header {
+            padding-top: 25%;
+            background-position-x: 70%;
+        }
+        .one-column h1 {
+            font-size: 6vw;
+        }
+        .one-column p {
+            font-size: 4vw;
+        }
+        .two-column p {
+            font-size: 4vw;
+        }
+        .three-column h3 {
+            font-size: 4vw;
+        }
+        .two-columnC p {
+            /*font-size: 2.3vw;*/
+            padding-top: 0%;
+            font-size: 3.3vw;
+        }
+        .recuadro-fuera {
+            padding-right: 7%;
+            padding-left: 7%;
+        }
+        .recuadro {
+            border: 0.72vw solid rgba(255, 255, 255, 0.5);
+        }
+        .recuadro:hover {
+            border: 0.72vw solid rgba(255, 255, 255, 1);
+        }
+        #section-1 {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .navbar .menu-list {
+            max-width: 55%;
+        }
+        #corredores th {
+            font-size: 3vw;
+        }
+        #corredores td {
+            font-size: 2.8vw;
+        }
+        /*----TABLA----*/
+        #corredoresins {
+            background-size: 315%;
+        }
+        /*------------*/
     }
-    #corredores th {
-        font-size: 2.8vw;
+    @media screen and (max-width:415px) {
+        .header {
+            background-position-y: bottom;
+            background-position-x: 80%;
+        }
     }
-    #corredores td {
-        font-size: 2.6vw;
+    @media screen and (max-width:400px) {
+        /*----TABLA----*/
+        #corredoresins {
+            background-size: 355%;
+        }
+        /*------------*/
     }
-    /*----TABLA----*/
-    #corredoresins {
-        background-size: 225%;
+    @media screen and (max-width:350px) {
+        .menu-btn {
+            font-size: 20px;
+        }
+        .cancel-btn {
+            font-size: 15px;
+        }
+        .recuadro {
+            border-radius: 20px;
+        }
+        /*----TABLA----*/
+        #corredoresins {
+            background-size: 370%;
+            background-position-x: 40%;
+        }
+        /*------------*/
     }
-    /*------------*/
-}
-
-@media screen and (max-width:600px) {
-    .menu-btn {
-        font-size: 30px;
+    @media screen and(max-width:300px) {
+        #corredores th {
+            font-size: 3vw;
+        }
+        #corredores td {
+            font-size: 2.8vw;
+        }
     }
-    .cancel-btn {
-        font-size: 20px;
-    }
-    .navbar .menu-list {
-        max-width: 45%;
-    }
-    .header {
-        padding-top: 20%;
-    }
-    .navbar .logo img {
-        width: 50%;
-    }
-    .footer h1 {
-        font-size: 4vw;
-    }
-    .footer p {
-        font-size: 2.5vw;
-    }
-    .recuadro {
-        border-radius: 25px;
-    }
-    /*----TABLA----*/
-    #corredoresins {
-        background-size: 240%;
-    }
-    /*------------*/
-}
-
-@media screen and (max-width:550px) {
-    .maparuta iframe {
-        height: 60vw;
-    }
-    .recuadro {
-        border-radius: 25px;
-    }
-    /*----TABLA----*/
-    #corredoresins {
-        background-size: 260%;
-    }
-    /*------------*/
-}
-
-@media screen and (max-width:500px) {
-    .navbar .menu-list li a {
-        font-size: 4vw;
-    }
-    .navbar .menu-list {
-        max-width: 50%;
-    }
-    /*----TABLA----*/
-    #corredoresins {
-        background-size: 285%;
-    }
-    /*------------*/
-}
-
-@media screen and (max-width:450px) {
-    .header {
-        padding-top: 25%;
-        background-position-x: 70%;
-    }
-    .one-column h1 {
-        font-size: 6vw;
-    }
-    .one-column p {
-        font-size: 4vw;
-    }
-    .two-column p {
-        font-size: 4vw;
-    }
-    .three-column h3 {
-        font-size: 4vw;
-    }
-    .two-columnC p {
-        /*font-size: 2.3vw;*/
-        padding-top: 0%;
-        font-size: 3.3vw;
-    }
-    .recuadro-fuera {
-        padding-right: 7%;
-        padding-left: 7%;
-    }
-    .recuadro {
-        border: 0.72vw solid rgba(255, 255, 255, 0.5);
-    }
-    .recuadro:hover {
-        border: 0.72vw solid rgba(255, 255, 255, 1);
-    }
-    #section-1 {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-    .navbar .menu-list {
-        max-width: 55%;
-    }
-    #corredores th {
-        font-size: 3vw;
-    }
-    #corredores td {
-        font-size: 2.8vw;
-    }
-    /*----TABLA----*/
-    #corredoresins {
-        background-size: 315%;
-    }
-    /*------------*/
-}
-
-@media screen and (max-width:415px) {
-    .header {
-        background-position-y: bottom;
-        background-position-x: 80%;
-    }
-}
-
-@media screen and (max-width:400px) {
-    /*----TABLA----*/
-    #corredoresins {
-        background-size: 355%;
-    }
-    /*------------*/
-}
-
-@media screen and (max-width:350px) {
-    .menu-btn {
-        font-size: 20px;
-    }
-    .cancel-btn {
-        font-size: 15px;
-    }
-    /*----TABLA----*/
-    #corredoresins {
-        background-size: 370%;
-        background-position-x: 40%;
-    }
-    /*------------*/
-}
-
-@media screen and(max-width:300px) {
-    #corredores th {
-        font-size: 3vw;
-    }
-    #corredores td {
-        font-size: 2.8vw;
-    }
-}
