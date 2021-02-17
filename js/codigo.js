@@ -41,12 +41,13 @@ window.onload = function() {
         body.classList.remove("disabledScroll")
     }
     seccion5.onclick = () => {
-            menu.classList.remove("active");
-            menuBtn.classList.remove("hide");
-            body.classList.remove("disabledScroll")
-        }
-        //--CUENTA ATRAS
-        // Set the date we're counting down to
+        menu.classList.remove("active");
+        menuBtn.classList.remove("hide");
+        body.classList.remove("disabledScroll")
+    }
+
+    //--CUENTA ATRAS
+    // Set the date we're counting down to
     var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
 
     // Update the count down every 1 second
